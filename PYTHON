@@ -50,3 +50,45 @@ try:
     print(f'Resultado: {resultado}')
 except ZeroDivisionError:
     print('Nao e possivel fazer divisao por 0')
+
+EX 2:
+def incluir_contato(agenda, nome: str, telefone: str):
+    # Verificar se contato existe
+    for a in agenda:
+        if a == telefone:
+            print('Contato ja existe')
+            return
+        
+        # Adicionar contato
+        agenda.append(telefone)
+
+print('Bem-vindo - agenda 2026')
+lista_contatos = []
+while True:
+    print('Escolher uma opçao')
+    print('1. Adicionar contato')
+    print('2. Remover contato')
+    print('3. verificar contato')
+    print('4. Exibir contato')
+    print('5. Sair')
+
+    opcao = input('Opçao: ')
+
+    if opcao == '1':
+        # adicionar
+        contato = input('digite o telefone: ')
+        lista_contatos
+        pass
+    elif opcao == '2':
+        # Remover
+        pass
+    elif opcao == '3':
+        # Consultar
+        pass
+    elif opcao == '4':
+        # Mostrar tudo
+        pass
+    elif opcao == '5':
+        break
+    else:
+        print('Opçao invalida')
