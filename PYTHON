@@ -49,4 +49,4 @@ try:
     resultado = numerador / denominador
     print(f'Resultado: {resultado}')
 except ZeroDivisionError:
-    print('Nao e possivel fazer divisao por 0')
+    print('Nao e possivel fazer divisao por 0') oi
