@@ -1,0 +1,43 @@
+1.Crie uma função que receba dois números e retorne o maior.
+
+def maior_numero(a, b):
+    if a > b:
+        return a
+    else:
+        return b
+
+# Pedindo os números ao usuário
+num1 = float(input("Digite o primeiro número: "))
+num2 = float(input("Digite o segundo número: "))
+
+# Chamando a função
+resultado = maior_numero(num1, num2)
+
+print("O maior número é:", resultado)
+
+2.Crie uma função que receba um número e diga se ele é primo.
+
+def eh_primo(numero: int):
+    if numero <= 1:
+        return 'Nao primo'
+    
+    for i in range(2, numero):
+        if numero % i == 0:
+            return 'Nao primo'
+    
+    return 'Primo'
+
+numero = int(input("Digite um número: "))
+print(eh_primo(numero))
+
+3.Crie uma função que receba uma lista de números e retorne a média
+
+def calcular_media(lista):
+    if len(lista) == 0:
+        return 0
+    return sum(lista) / len(lista)
+
+entrada = input("Digite números separados por espaço: ")
+numeros = [float(x) for x in entrada.split()]
+
+print("A média é:", calcular_media(numeros))
